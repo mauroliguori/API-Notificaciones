@@ -1,0 +1,6 @@
+vendor*
+git*
+.git*
+.kube*
+.env
+
