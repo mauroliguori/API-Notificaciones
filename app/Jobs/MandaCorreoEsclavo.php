@@ -40,7 +40,7 @@ class MandaCorreoEsclavo implements ShouldQueue
      */
     public function handle()
     {
-        $correo = new Correito($this -> from, $this -> subject, $this -> $body);
+        $correo = new Correito($this -> from, $this -> subject, $this -> body);
         Mail::to($this -> to)->send($correo);
     }
 }
